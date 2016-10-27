@@ -57,7 +57,7 @@ public class EntradasForoTest {
     
     
     @Test
-    public void agregarforo1() throws ExcepcionServiciosForos{
+    public void agregarforo1() throws Exception{
     	/**ServiciosForoStub svf=new ServiciosForoStub();
     	EntradaForo ef=new EntradaForo(999999,new Usuario("martinjhm271@hotmail.es","Martin Hernandez") ,"Por que el agua moja?", "Super interrogante", java.sql.Date.valueOf("2000-01-01"));
     	svf.registrarNuevaEntradaForo(ef);
@@ -69,7 +69,7 @@ public class EntradasForoTest {
         */
     }
      @Test
-    public void agregarforo2() throws ExcepcionServiciosForos{
+    public void agregarforo2() throws Exception{
     	/**ServiciosForoStub svf=new ServiciosForoStub();
     	EntradaForo ef=new EntradaForo(999999,new Usuario("martinjhm271@hotmail.es","Martin Hernandez") ,"", "", java.sql.Date.valueOf("2000-01-01"));
     	svf.registrarNuevaEntradaForo(ef);
@@ -78,7 +78,7 @@ public class EntradasForoTest {
         */
     }
     @Test
-    public void agregarforo3() throws ExcepcionServiciosForos{
+    public void agregarforo3() throws Exception{
     	/**ServiciosForoStub svf=new ServiciosForoStub();
     	EntradaForo ef=new EntradaForo(999999,new Usuario("","") ,"Por que el agua moja?", "Super interrogante", java.sql.Date.valueOf("2000-01-01"));
     	svf.registrarNuevaEntradaForo(ef);
