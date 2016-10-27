@@ -15,13 +15,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package edu.eci.pdsw.samples.tests;
-
+/**
 import edu.eci.pdsw.samples.entities.Comentario;
 import edu.eci.pdsw.samples.entities.EntradaForo;
 import edu.eci.pdsw.samples.entities.Usuario;
 import edu.eci.pdsw.samples.services.ExcepcionServiciosForos;
 import edu.eci.pdsw.samples.services.ServiciosForo;
 import edu.eci.pdsw.samples.services.ServiciosForoStub;
+*/
 import java.sql.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -56,7 +57,7 @@ public class ComentariosTest {
     
     
     @Test
-    public void registrarcomentario() throws ExcepcionServiciosForos{
+    public void registrarcomentario() throws Exception{
         ServiciosForo svf=new ServiciosForoStub();
         Usuario u = svf.consultarUsuario("juan.perez@gmail.com");
         Comentario c=new Comentario(0,u,"Buen post", new Date(java.util.Calendar.getInstance().getTime().getTime()));
@@ -65,7 +66,7 @@ public class ComentariosTest {
         assertEquals("el numero de respuestas del foro con id=0 es igual 1",e.getRespuestas().size(),1);
     }
     @Test
-    public void registrarcomentario2() throws ExcepcionServiciosForos{
+    public void registrarcomentario2() throws Exception{
         ServiciosForo svf=new ServiciosForoStub();
         Usuario u = svf.consultarUsuario("juan.perez@gmail.com");int ans=-1;
         for(EntradaForo e:svf.consultarEntradasForo()){
@@ -80,7 +81,7 @@ public class ComentariosTest {
     }
  
     @Test
-    public void confirmarregistrodeComentariosConUusuariosIgualesyElcreadordelforo(){
+    public void confirmarregistrodeComentariosConUusuariosIgualesyElcreadordelforo() {
         try {
             ServiciosForo svf=new ServiciosForoStub();
             Usuario u = svf.consultarUsuario("juan.perez@gmail.com");
@@ -93,7 +94,7 @@ public class ComentariosTest {
             svf.agregarRespuestaForo(1, new Comentario(3,u2, "¿Que linea de sistemas prefieren?", new Date(java.util.Calendar.getInstance().getTime().getTime())));
             svf.agregarRespuestaForo(1, new Comentario(4,u, "ESCUELAING la mejor universidad", new Date(java.util.Calendar.getInstance().getTime().getTime())));
             assertEquals("el numero de respuestas del foro son 4 comentarios incluyendo el usuario de la entradaforo",svf.consultarEntradaForo(1).getRespuestas().size(),4);
-        } catch (ExcepcionServiciosForos ex) {
+        } catch (Exception e) {
         }
     }
  
