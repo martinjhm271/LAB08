@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package edu.eci.pdsw.samples.tests;
-/*
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,7 +27,7 @@ import edu.eci.pdsw.samples.services.ServiciosForoStub;
 import static org.junit.Assert.*;
 
 import java.util.List;
-*/
+
 /**
  *
  * @author hcadavid
@@ -44,7 +44,7 @@ import java.util.List;
  * 
  * Clase 3 = Enviarle un foro con un uuario que tenga de email y nombre nulo o vacio (titulo="" || comentario="" || titulo=null || comentario=null) 
  *
- *//*
+ */
 public class EntradasForoTest {
     
     public EntradasForoTest() {
@@ -84,4 +84,3 @@ public class EntradasForoTest {
     }
     
 }
-*/

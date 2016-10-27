@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package edu.eci.pdsw.samples.tests;
-/*
+
 import edu.eci.pdsw.samples.entities.Comentario;
 import edu.eci.pdsw.samples.entities.EntradaForo;
 import edu.eci.pdsw.samples.entities.Usuario;
@@ -34,7 +34,7 @@ import static org.junit.Assert.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-*/
+
 /**
  * Pruebas de Equivalencia
  * 
@@ -44,7 +44,7 @@ import java.util.Calendar;
  *
  */
 
-/*
+
 public class ComentariosTest {
     
     public ComentariosTest() {
@@ -98,4 +98,3 @@ public class ComentariosTest {
     }
  
 }
-*/

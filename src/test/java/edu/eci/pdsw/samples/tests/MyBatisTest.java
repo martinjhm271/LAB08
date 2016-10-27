@@ -1,5 +1,5 @@
 package edu.eci.pdsw.samples.tests;
-/*
+
 import edu.eci.pdsw.samples.persistence.PersistenceException;
 import edu.eci.pdsw.samples.persistence.mybatisimpl.mappers.EntradaForoMapper;
 import static edu.eci.pdsw.samples.textview.MyBatisExample.getSqlSessionFactory;
@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-*/
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -20,7 +20,7 @@ import org.junit.Test;
 /**
  *
  * @author 2105537
- *//*
+ */
 public class MyBatisTest {
     
     @Before
@@ -38,4 +38,3 @@ public class MyBatisTest {
     }
     
 }
-*/
